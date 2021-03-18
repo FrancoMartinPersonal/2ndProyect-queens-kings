@@ -1,0 +1,543 @@
+* {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 20px;
+    margin: 0px;
+    padding: 0px;
+}/*mobile first*/
+header{
+    
+ width: 100%;
+ height:3em;
+
+ background: rgb(179, 190, 194);
+ position: relative;
+ z-index: 1200;
+} 
+h1 {
+    margin: 0;
+
+}
+
+.contenedor__titulo {
+    display: flex;
+     margin: 0;
+     position: absolute;
+     padding-left: 10px;
+     flex-wrap: nowrap;
+     font-size: 24px;
+     background: gainsboro;
+     min-width:6em;
+     width:0%;
+     height: 100%;
+
+}
+.contenedor__icono {
+position: absolute;
+top: 45%;
+left:47%;
+font-size: 24px;
+}
+.contenedor__desplegable {
+    margin-top: 15px;
+    margin-right: 5px ;
+    display: flex;
+    float: right;
+    font-size: 30px;
+    color: rgba(43, 61, 65, 0.795);
+    transition: all 0.2s;
+    z-index: 1000;
+    position: relative;
+}
+.contenedor__desplegable:hover{
+color:lightgoldenrodyellow
+
+}
+.contenedor__nav{
+  
+position: absolute;
+top: -200px;
+height: 55%;
+background: rgba(0, 0, 0, 0.575);
+width: 100%;
+ z-index: 500;
+align-items: center;
+justify-content: center;
+transition: all 1s;
+}
+
+
+.contenedor__ul-items {
+ border-bottom: 1px solid rgb(255, 255, 255);   
+  padding-left:40px;
+ padding-bottom: 10px;
+  padding-top: 10px;
+}
+.contenedor__ul-items a{
+ font-family: Tahoma, sans-serif;
+ letter-spacing: 2px;
+ 
+ font-stretch:ultra-expanded;
+ text-decoration: none;  
+position: absolute;
+color: rgb(255, 255, 255);
+}
+.contenedor__ul-items:nth-child(1){
+border-top:1px solid rgb(255, 255, 255);
+}
+.contenedor__ul-items:nth-child(4){
+border-bottom:1px solid rgb(255, 255, 255);
+
+}
+.contenedor__desplegable:hover ~ .contenedor__nav{
+top: 60px;
+position: fixed;
+}
+/*el main section*/
+main section {
+    width:100%;
+}
+.contenedor__section-imagen{
+    width:100%;
+    height:100%;
+    position: relative;
+    background-color:lightslategray;
+     z-index: 100;
+    filter: brightness(60%);
+}
+
+.contenedor__section-titulo{
+  
+    position: absolute;
+    
+    margin-top: -60%;
+    width: 100%;
+    text-align: center;
+
+ z-index: 800;
+
+}
+.contenedor__section-titulo h2{
+    font-size: 120%;
+    color: rgb(255, 246, 246);
+    padding: 3px 8px;
+    background: rgba(0, 0, 0, 0.336);
+
+}
+.contenedor__section-titulo h4{
+    margin-bottom: 3.5em;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+        background: rgba(0, 0, 0, 0.342);
+    padding: 3px 8px;
+}
+.contenedor__section-tutorial{
+    border: 3px solid white;
+    padding: 3px 8px;
+ position: absolute;
+text-decoration: none;
+bottom: 0.5em;
+right: 40%;
+color: rgb(255, 255, 255);
+}
+.contenedor__section-tutorial:hover{
+    border: 3px solid rgb(243, 180, 97);
+    background: rgba(0, 0, 0, 0.432);
+    padding: 3px 8px;
+ position: absolute;
+text-decoration: none;
+bottom: 0.5em;
+color: rgb(243, 180, 97);
+}
+
+/*section bienvenido*/
+.contenedor__section-bienvenido{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background: rgba(19, 17, 13, 0.100);
+  height: 10em;
+}
+.contenedor__section-bienvenido h3{
+font-size: 25px;
+font-family: Times, 'Times New Roman', serif;
+text-align: center;
+
+}
+.contenedor__section-bienvenido p{
+font-size: 15px;
+text-align: center;
+margin:20px 0px;
+
+}
+/* h3 oferta */
+.section__oferta-h3{
+    font-size: 2em;
+    text-align: center;
+    margin: 50px 0px;
+    background: rgba(100, 148, 237, 0.199);
+}
+/*section oferta*/
+
+.contenedor__section-oferta{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+background: rgba(124, 124, 124, 0.116);
+padding:50px 0px;
+}
+
+.contenedor__section-oferta-items {
+    width: 90%;
+    max-height:500px;
+    margin-left: 2.5%;
+    max-width: 400px
+    
+}
+.contenedor__section-oferta-items h5{
+    padding: 30px 10px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    
+}
+.contenedor__section-oferta-items:nth-child(3){
+     max-width:450px;
+}
+.contenedor__section-oferta-items:nth-child(1){
+     max-width:420px;
+}
+/*ajedrecistas h3*/
+.section__ajedrecista-h3{
+       font-size: 2em;
+    text-align: center;
+    padding: 50px 0px;
+    color: white;
+    background-color: black;
+}
+/*contenedor ajedrecistas*/
+
+.contenedor__section-ajedrecista{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding:50px 0px;
+    background: rgba(10, 10, 10, 0.829);
+}
+.contenedor__section-ajedrecista-items{
+    text-align: center;
+    margin: 0px 20px;
+    max-width:400px;
+    min-width: 270px;   
+    color: white;
+    
+    
+}
+.contenedor__section-ajedrecista-items img{
+    border: 7px solid white;
+    border-radius: 100%;
+}
+.contenedor__section-ajedrecista-items img:nth-last-child(3){
+    width:550px;
+}
+.contenedor__section-ajedrecista-items h6{
+ padding: 20px 0;   
+ font-size: 1.5em;
+ 
+}
+.contenedor__section-ajedrecista-items p{
+   
+ font-size: 1em;
+font-family: 'Barlow Condensed', sans-serif;
+}
+/*footer*/
+.contenedor__footer{
+    padding: 2em 0px;
+    
+    background:linear-gradient(rgb(58, 50, 50),rgb(158, 123, 47), rgb(255, 155, 5));
+}
+.contenedor__footer-redes{
+    text-align: center;
+    padding-top: 1em ;
+    color: coral;
+    
+}
+.contenedor__footer-redes a{
+    font-size: 2em;
+    color: rgb(56, 40, 16);
+}
+.contenedor__footer-copy p{
+    text-align: center;
+    font-size: 1.25em;
+}
+/*fin del mobile first*/
+
+/*comienzo del desktop*/
+
+@media only screen and (min-width:768px) {
+    
+header{
+    
+ width: 100%;
+ height:3em;
+
+ background: rgb(179, 190, 194);
+ position: none;
+ z-index: 1200;
+} 
+h1 {
+    margin: 0;
+
+}
+
+.contenedor__titulo {
+    display: flex;
+     margin: 0;
+     position: absolute;
+     padding-left: 10px;
+     flex-wrap: nowrap;
+     font-size: 24px;
+     background: gainsboro;
+     min-width:6em;
+     width:0%;
+     height: 100%;
+
+}
+.contenedor__icono {
+position: absolute;
+top: 45%;
+left:47%;
+font-size: 24px;
+}
+.contenedor__desplegable {
+    display: none;
+}
+.contenedor__desplegable:hover{
+color:lightgoldenrodyellow
+
+}
+.contenedor__nav{
+display:flex;
+position: absolute;
+top: 15px;
+right: 1em;
+background:none;
+width: 70%;
+ z-index: 500;
+align-items:unset;
+justify-content:space-around;
+transition: unset;
+
+}
+
+
+.contenedor__ul-items {
+   display:inline-block;
+    
+ width:unset;
+ height: auto;
+ border-right: 1px solid  rgb(90, 37, 90);
+ border-bottom:unset;   
+  padding-left:12px;
+  padding-right:12px;
+ padding-bottom: unset;
+  padding-top: unset;
+}
+.contenedor__ul-items a:hover{
+color: rgb(161, 114, 11);
+}
+.contenedor__ul-items a{
+    display:static;
+ font-family: Tahoma, sans-serif;
+ letter-spacing: 2px;
+ 
+ 
+ text-decoration: none;  
+position: static;
+color: rgb(255, 255, 255);
+transition:0.25s color;
+
+}
+.contenedor__ul-items:nth-child(1){
+border-top:unset;
+ border-left: 1px solid rgb(90, 37, 90);
+}
+.contenedor__ul-items:nth-child(4){
+border-bottom:unset;
+}
+
+
+/*el main section*/
+main section {
+    width:100%;
+}
+.contenedor__section-imagen{
+    width:100%;
+    height:100%;
+    position: relative;
+    background-color:lightslategray;
+     z-index: 100;
+    filter: brightness(60%);
+}
+
+.contenedor__section-titulo{
+  
+    position: absolute;
+    
+    margin-top: -60%;
+    width: 100%;
+    text-align: center;
+
+ z-index: 800;
+
+}
+.contenedor__section-titulo h2{
+    font-size:3em;
+    color: rgb(255, 246, 246);
+    padding: 3px 8px;
+    background: rgba(0, 0, 0, 0.336);
+
+}
+.contenedor__section-titulo h4{
+    margin-bottom: 3.5em;
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+        background: rgba(0, 0, 0, 0.342);
+    padding: 3px 8px;
+}
+.contenedor__section-tutorial{
+    border: 3px solid white;
+    padding: 10px 15px;
+ position: absolute;
+text-decoration: none;
+bottom: -0.5em;
+right: 45%;
+color: rgb(255, 255, 255);
+font-size: 2em;
+}
+.contenedor__section-tutorial:hover{
+    border: 3px solid rgb(243, 180, 97);
+    background: rgba(0, 0, 0, 0.432);
+    padding: 10px 15px;
+ position: absolute;
+text-decoration: none;
+bottom: -0.5em;
+color: rgb(243, 180, 97);
+}
+
+/*section bienvenido*/
+.contenedor__section-bienvenido{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background: rgba(19, 17, 13, 0.100);
+  height: 10em;
+}
+.contenedor__section-bienvenido h3{
+font-size: 2em;
+font-family: Times, 'Times New Roman', serif;
+text-align: center;
+
+}
+.contenedor__section-bienvenido p{
+font-size:0.90em;
+text-align: center;
+margin:20px 0px;
+
+}
+/* h3 oferta */
+.section__oferta-h3{
+    font-size: 2.2em;
+    text-align: center;
+    margin: 50px 0px;
+    background: rgba(100, 148, 237, 0.199);
+}
+/*section oferta*/
+
+.contenedor__section-oferta{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+background: rgba(124, 124, 124, 0.116);
+padding:50px 0px;
+}
+
+.contenedor__section-oferta-items {
+    width: 90%;
+    max-height:500px;
+    margin-left: 2.5%;
+    max-width: 400px
+    
+}
+.contenedor__section-oferta-items h5{
+    padding: 30px 10px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    
+}
+.contenedor__section-oferta-items:nth-child(3){
+     max-width:450px;
+}
+.contenedor__section-oferta-items:nth-child(1){
+     max-width:420px;
+}
+/*ajedrecistas h3*/
+.section__ajedrecista-h3{
+       font-size: 2em;
+    text-align: center;
+    padding: 50px 0px;
+    color: white;
+    background-color: black;
+}
+/*contenedor ajedrecistas*/
+
+.contenedor__section-ajedrecista{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding:50px 0px;
+    background: rgba(10, 10, 10, 0.829);
+}
+.contenedor__section-ajedrecista-items{
+    text-align: center;
+    margin: 0px 20px;
+    max-width:400px;
+    min-width: 270px;   
+    color: white;
+    
+    
+}
+.contenedor__section-ajedrecista-items img{
+    border: 7px solid white;
+    border-radius: 100%;
+}
+.contenedor__section-ajedrecista-items img:nth-last-child(3){
+    width:550px;
+}
+.contenedor__section-ajedrecista-items h6{
+ padding: 20px 0;   
+ font-size: 1.5em;
+ 
+}
+.contenedor__section-ajedrecista-items p{
+   
+ font-size: 1em;
+font-family: 'Barlow Condensed', sans-serif;
+}
+/*footer*/
+.contenedor__footer{
+    padding: 2em 0px;
+    
+    background:linear-gradient(rgb(58, 50, 50),rgb(158, 123, 47), rgb(255, 155, 5));
+}
+.contenedor__footer-redes{
+    text-align: center;
+    padding-top: 1em ;
+    color: coral;
+    
+}
+.contenedor__footer-redes a{
+    font-size: 2em;
+    color: rgb(56, 40, 16);
+}
+.contenedor__footer-copy p{
+    text-align: center;
+    font-size: 1.25em;
+}
+}
